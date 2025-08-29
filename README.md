@@ -44,15 +44,49 @@ npm start
 
 ### Example
 
+Request:
 ```bash
 curl http://localhost:3000/api/video/pppe-356
 ```
 
+Response:
+```json
+{
+    "success": true,
+    "data": {
+        "videoCode": "pppe-356",
+        "title": "暗戀比我小一輪、又超正的苗條巨乳繼妹到說她交了男友，我妒火中燒下了安眠藥，每晚都趁她昏睡無套中出幹她",
+        "actress": [
+            "楪可憐"
+        ],
+        "thumbnail": "https://assets-cdn.jable.tv/contents/videos_screenshots/52000/52882/preview.jpg",
+        "duration": null,
+        "views": null,
+        "tags": [
+            "中文字幕",
+            "角色劇",
+            "媚藥",
+            "進犯",
+            "凌辱",
+            "巨乳",
+            "中出",
+            "少女",
+            "凌辱快感",
+            "催眠"
+        ],
+        "textInfo": "中文字幕",
+        "description": "此作品曾在本站上傳，現已更新至中文字幕版。暗戀比我小一輪、又超正的苗條巨乳繼妹到說她交了男友，我妒火中燒下了安眠藥，每晚都趁她昏睡無套中出幹她",
+        "url": "https://jable.tv/videos/pppe-356/"
+    },
+    "timestamp": "2025-08-29T08:20:49.236Z"
+}
+```
+
 ## Features
 
-- URL validation before Browserless calls to save API usage
 - Extracts video title, actress, tags, duration, and more
 - Handles Cloudflare-protected content via Browserless
+- Validates video existence after fetching content
 
 ## Note
 
@@ -106,15 +140,49 @@ npm start
 
 #### 範例
 
+請求：
 ```bash
 curl http://localhost:3000/api/video/pppe-356
 ```
 
+回應：
+```json
+{
+    "success": true,
+    "data": {
+        "videoCode": "pppe-356",
+        "title": "暗戀比我小一輪、又超正的苗條巨乳繼妹到說她交了男友，我妒火中燒下了安眠藥，每晚都趁她昏睡無套中出幹她",
+        "actress": [
+            "楪可憐"
+        ],
+        "thumbnail": "https://assets-cdn.jable.tv/contents/videos_screenshots/52000/52882/preview.jpg",
+        "duration": null,
+        "views": null,
+        "tags": [
+            "中文字幕",
+            "角色劇",
+            "媚藥",
+            "進犯",
+            "凌辱",
+            "巨乳",
+            "中出",
+            "少女",
+            "凌辱快感",
+            "催眠"
+        ],
+        "textInfo": "中文字幕",
+        "description": "此作品曾在本站上傳，現已更新至中文字幕版。暗戀比我小一輪、又超正的苗條巨乳繼妹到說她交了男友，我妒火中燒下了安眠藥，每晚都趁她昏睡無套中出幹她",
+        "url": "https://jable.tv/videos/pppe-356/"
+    },
+    "timestamp": "2025-08-29T08:20:49.236Z"
+}
+```
+
 ### 功能特點
 
-- 在呼叫 Browserless 前先驗證 URL 以節省 API 使用量
 - 提取影片標題、演員、標籤、時長等資訊
 - 透過 Browserless 處理受 Cloudflare 保護的內容
+- 擷取內容後驗證影片是否存在
 
 ### 備註
 
