@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.browserless.io)",
+      "WebFetch(domain:docs.browserless.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
